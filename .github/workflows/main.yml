@@ -25,7 +25,7 @@ jobs:
         with:
           distribution: temurin
           java-version: ${{ matrix.java-version }}
-          cache: mvn
+          cache: ivy
 
       - name: Run the unit tests
         run: mvn test
