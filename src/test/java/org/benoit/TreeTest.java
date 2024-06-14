@@ -8,6 +8,7 @@ import org.benoit.Tree.WithId;
 
 public class TreeTest {
 
+    @Test
     public void testAddId() {
         Tree.Leaf l = new Tree.Leaf();
         Tree.Branch expectedtb = new Tree.Branch(new Tree.WithId(4, "a"),
