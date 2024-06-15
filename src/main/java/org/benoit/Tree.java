@@ -17,7 +17,7 @@ public class Tree<T> {
         return addId(node,0).value();
     }
 
-    // Because it is not possible to declare a variable in an expression in Java, I had to write this provate class
+    // Because it is not possible to declare a variable in an expression in Java, I had to write this private class
     // In Scala the code could have put in the case statement
     private WithId<INode<WithId<T>>> newBranch(Branch<T> b, Integer start)  {
         var newLeft = addId(b.left(), start);
@@ -36,7 +36,7 @@ public class Tree<T> {
         return new WithId(start, leaf);
     }
 
-    // Replace AbstractMap.SimpleEntry with record
+    // Replaced AbstractMap.SimpleEntry with record
     WithId<INode<WithId<T>>>
         addId(INode<T> node, Integer start) {
         // The switch starts to look good !
